@@ -1,0 +1,17 @@
+#root{
+    width: 700px;
+    margin: 0 auto;
+}
+
+.btn-row{
+    display: inline-block;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem;
+    background-color: rgb(57, 129, 192);
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
