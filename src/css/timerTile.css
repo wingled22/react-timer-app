@@ -6,6 +6,10 @@
     margin: 5px;
 }
 
+.stop{
+    border: solid 8px rgb(192, 57, 57);
+}
+
 .btn-row{
     display: inline-block;
 }

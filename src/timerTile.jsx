@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import "./css/timerTile.css";
 
 function TimerTile({countDown}){
-    const [defValue, setDefValue] = useState(countDown.time)
     const [timerValue, setTimerValue] = useState(countDown.time)
     const [pause, setPause] = useState(countDown.isPaused)
 
@@ -31,8 +30,12 @@ function TimerTile({countDown}){
     }
 
     return (
-        <div  key = {countDown.id} className="timer-tile">
-            <h1> {timerValue} </h1>
+        <div  key = {countDown.id} className={`timer-tile ${timerValue==0 ? "stop" : ''}`} >
+            <div className="close">X</div>
+            <center>
+                <h1> {timerValue} </h1>
+            </center>
+
             <div className='btn-row'>
                 <div className="btn" onClick={pauseTimer}>{pause? "play" : "pause"}</div>
                 <div className="btn" onClick={resetTimer}>Reset</div>
