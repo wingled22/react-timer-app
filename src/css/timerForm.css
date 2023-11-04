@@ -1,0 +1,19 @@
+.timer-form{
+    border: solid 5px rgb(57, 129, 192);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.timer-form form input{
+    font-size: 1rem;
+    height: 1.2rem;
+    padding: 10px;
+    margin:10px;
+    width: 500px;
+}
+
+.timer-form form button{
+    background: rgb(57, 129, 192);
+    width: 120px;
+}
