@@ -4,11 +4,14 @@
     padding: 1rem;
     border-radius: 20px;
     margin: 5px;
+    position: relative;
 }
 
 .stop{
     border: solid 8px rgb(192, 57, 57);
 }
+
+
 
 .btn-row{
     display: inline-block;
@@ -25,4 +28,14 @@
 
 .btn:last-child{
     margin-right: 0;
+}
+
+.close{
+    position: absolute;
+    font-size: 20px;
+    right: 20px
+}
+
+.stop-btn{
+    background-color: rgb(192, 57, 57);
 }
