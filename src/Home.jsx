@@ -19,10 +19,17 @@ function Home(){
                 isPaused: false 
             }]
         })
-        
+
+        setCountDown(0)
     }
 
-    console.table(countDownTimers);
+    function deleteTimer(id){
+        console.log("deleting")
+        setCountDownTimers(currentCountDowntTimers => {
+            return currentCountDowntTimers.filter(c => c.id !== id)
+        })
+    }
+
     return (
         <>
             <div className="timer-form">
@@ -42,7 +49,9 @@ function Home(){
                     countDownTimers.map(ctd =>{
                         return (
                             <TimerTile 
+                                key ={ctd.id}
                                 countDown = {ctd}
+                                deleteTimer = {deleteTimer}
                             />
                         )
                     })
